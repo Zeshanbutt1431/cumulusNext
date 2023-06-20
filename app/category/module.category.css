@@ -14,9 +14,7 @@
 
 .Sidenav {
     padding: 0 5px;
-    box-shadow: 0px 0px 9px 0px rgba(235, 235, 235, 0.75);
-    -webkit-box-shadow: 0px 0px 9px 0px rgba(235, 235, 235, 0.75);
-    -moz-box-shadow: 0px 0px 9px 0px rgba(235, 235, 235, 0.75);
+    font-size: 14px;
 }
 
 .Sidenav h6 {   
@@ -29,14 +27,53 @@
 .Sidenav ul{
     list-style: none;
 }
-.accordion{
-    font-size: 16px;
+.Sidenav .accordion-item{
+    border:none;
 }
+.Sidenav .accordion-body{
+    padding-top: 0;
+}
+.Sidenav .accordion-body ul{
+    padding: 0;
+}
+.accordion{
+    font-size: 14px;
+}
+.Sidenav.accordion-button:active{
+    box-shadow: none;
+    background-color: transparent;
+}
+.Sidenav .accordion-item .show{
+    display: block;
+}
+.Sidenav .accordion-collapse{
+    display: none;
+}
+.accordion-button {
+    border: 0;
+    font-size: 14px;
+}
+.accordion-button:focus{
+    background-color: transparent;
+    box-shadow: none;
 
+}
 .PaginationTop {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+select{
+    padding: 2px 5px;
+    margin-left: 7px;
+}
+.view-icons{
+    font-size: 20px;
+    text-align: right;
+}
+.product-search{
+    padding:0 8px;
+    font-size: 16px;
 }
 .pagination a{
     color: #000;
@@ -49,6 +86,7 @@
 }
 .ProductSorting{
    margin: 10px 0; 
+   font-size: 14px;
 }
 .SortingSelect, .ViewSelect{
     font-size: 14px;
@@ -61,13 +99,14 @@
 }
 
 .SingleProduct {
-    width: 300px;
+    max-width: 300px;
     border: 1px solid lightblue;
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 5px;
     margin-top: 10px;
+    width: 100%;
 }
 
 .SingleProduct .prod-image {
@@ -86,6 +125,7 @@
 
 .SingleProduct .prod-detail {
     padding: 10px;
+    width: 100%;
 }
 
 .SingleProduct .prod-brand {
@@ -99,6 +139,7 @@
     font-size: 16px;
     text-transform: uppercase;
     color: black;
+    height: 80px;
 }
 
 .SingleProduct .stock {

@@ -6,7 +6,9 @@ const SortingSelect = () => {
     setSelectedOption(event.target.value);
   };
   return (
-    <select value={selectedOption} onChange={handleChange} className="SortingSelect">
+    <>
+    <label htmlFor="sorting">Sort:</label>
+    <select value={selectedOption} onChange={handleChange} className="SortingSelect" id="sorting">
       <option value="">Default</option>
       <option value="NameAsc">Name (A - Z)</option>
       <option value="NameDes">Name (Z - A)</option>
@@ -14,6 +16,7 @@ const SortingSelect = () => {
       <option value="NameDes">Name (High - Low)</option>
       <option value="brands">Brands</option>
     </select>
+    </>
   );
 };
 

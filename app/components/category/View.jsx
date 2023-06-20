@@ -1,7 +1,7 @@
 import {BsFillGrid3X3GapFill,BsListUl} from 'react-icons/bs'
 const View = () => {
   return (
-    <div>
+    <div className='view-icons'>
         <BsFillGrid3X3GapFill/> &nbsp; <BsListUl/>
     </div>
   )

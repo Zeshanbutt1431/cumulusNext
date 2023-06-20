@@ -6,13 +6,16 @@ const ViewSelect = () => {
     setSelectedOption(event.target.value);
   };
   return (
-    <select value={selectedOption} onChange={handleChange} className="ViewSelect" >
-      <option value="">Default</option>
+    <>
+    <label htmlFor="view">View:</label>
+    <select value={selectedOption} onChange={handleChange} className="ViewSelect" id="view">
       <option value="20">20</option>
       <option value="40">40</option>
       <option value="80">80</option>
       <option value="All">All</option>
     </select>
+    </>
+
   );
 };
 
